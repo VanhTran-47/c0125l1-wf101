@@ -1,0 +1,31 @@
+body {
+    background: #491bca;
+}
+
+h1 {
+    text-align: center;
+    color: #f8f7f7;
+    font-size: 48px;
+}
+
+p {
+    color: #f8f7f7;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+li {
+    color: #f8f7f7;
+    font-size: 28px;
+}
+
+button {
+    margin-left: 20px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+button:hover {
+    background-color: #75710a;
+    color: aliceblue;
+}
