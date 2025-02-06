@@ -1,0 +1,16 @@
+body {
+    background-color: cornflowerblue;
+}
+
+h1 {
+    color: #f8f7f7; text-align: center;
+}
+
+p {
+    color: #f8f7f7; margin-left: 40px;
+}
+
+audio {
+    margin-left: 40px;
+    background-image: -moz-radial-gradient(dodgerblue);
+}
