@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>An Cát</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px 72px;
+            color: #005c01;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .nav-links li {
+            margin: 0 8px;
+            padding: 12px 4px 12px 4px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .login {
+            display: block;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+
+        .nav-links li:hover {
+            background: blueviolet;
+        }
+
+        .nav-links> li:hover> a, .submenu li:hover a {
+            color: white;
+        }
+        .nav-links li:hover .submenu {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .submenu {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            margin-top: 12px;
+            left: 406px;
+            padding: 0px 0px 0px 0px;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: all 0.3s;
+        }
+
+
+        .submenu li {
+            display: block;
+            margin: 0px;
+            padding: 16px 0px;
+        }
+
+
+        .submenu li a {
+            color: #555555;
+            font-size: 15px;
+            display: block;
+            padding: 0px 12px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">GĐPT AN CÁT</div>
+    <ul class="nav-links">
+        <li><a href="#"><b>TRANG CHỦ</b></a></li>
+        <li><a href="#">TU HỌC <i class="material-icons" style="font-size:24px">expand_more</i></a>
+            <ul class="submenu">
+                <li><a href="#">Ngành Đồng</a></li>
+                <li><a href="#">Ngành Thiếu</a></li>
+                <li><a href="#">Ngành Thanh</a></li>
+                <li><a href="#">Huynh Trưởng</a></li>
+            </ul>
+        </li>
+        <li><a href="#">HUẤN LUYỆN <i class="material-icons" style="font-size:24px">expand_more</i></a></li>
+        <li><a href="#">HOẠT ĐỘNG THANH NIÊN <i class="material-icons" style="font-size:24px">expand_more</i></a></li>
+        <li><a href="#">TƯ LIỆU THAM KHẢO <i class="material-icons" style="font-size:24px">expand_more</i></a></li>
+        <li><a href="#">GÓC VƯỜN LAM</a></li>
+        <li><a href="#">GIẢI MẬT THƯ</a></li>
+    </ul>
+    <div class="login" style="color: #337ab7">Đăng nhập</div>
+</nav>
+
+</body>
+</html>
