@@ -21,7 +21,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: white;
-            padding: 20px 72px;
+            padding: 20px 64px;
             color: #005c01;
         }
 
@@ -40,6 +40,7 @@
         .nav-links li {
             margin: 0 8px;
             padding: 12px 4px 12px 4px;
+            position: relative;
         }
 
         .nav-links li a {
@@ -73,8 +74,8 @@
             visibility: hidden;
             opacity: 0;
             position: absolute;
-            margin-top: 12px;
-            left: 406px;
+            top: 100%;
+            left: 0;
             padding: 0px 0px 0px 0px;
             background-color: white;
             min-width: 200px;
@@ -93,10 +94,39 @@
 
         .submenu li a {
             color: #555555;
-            font-size: 15px;
+            font-size: 20px;
             display: block;
             padding: 0px 12px;
             text-decoration: none;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1228px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li {
+                padding: 10px;
+            }
+
+            .menu-icon {
+                display: block;
+                margin-left: auto;
+                padding: 16px;
+            }
         }
     </style>
 </head>
@@ -113,12 +143,39 @@
                 <li><a href="#">Huynh Trưởng</a></li>
             </ul>
         </li>
-        <li><a href="#">HUẤN LUYỆN <i class="material-icons" style="font-size:24px">expand_more</i></a></li>
-        <li><a href="#">HOẠT ĐỘNG THANH NIÊN <i class="material-icons" style="font-size:24px">expand_more</i></a></li>
-        <li><a href="#">TƯ LIỆU THAM KHẢO <i class="material-icons" style="font-size:24px">expand_more</i></a></li>
+        <li><a href="#">HUẤN LUYỆN <i class="material-icons" style="font-size:24px">expand_more</i></a>
+            <ul class="submenu">
+                <li><a href="#">Trại Tuyết Sơn</a></li>
+                <li><a href="#">Trại Anoma - Ni Liên</a></li>
+                <li><a href="#">Trại Tu Đạt Đa - Tỳ Xá Khư</a></li>
+                <li><a href="#">Trại Lộc Uyển</a></li>
+                <li><a href="#">Trại A Dục</a></li>
+                <li><a href="#">Trại Huyền Trang</a></li>
+                <li><a href="#">Trại Vạn Hạnh</a></li>
+            </ul>
+        </li>
+        <li><a href="#">HOẠT ĐỘNG THANH NIÊN <i class="material-icons" style="font-size:24px">expand_more</i></a>
+            <ul class="submenu">
+                <li><a href="#">Gút dây</a></li>
+                <li><a href="#">Mật thư</a></li>
+                <li><a href="#">Dấu đi đường</a></li>
+                <li><a href="#">Truyền tin</a></li>
+                <li><a href="#">Phương hướng</a></li>
+                <li><a href="#">Ước đạt</a></li>
+            </ul>
+        </li>
+        <li><a href="#">TƯ LIỆU THAM KHẢO <i class="material-icons" style="font-size:24px">expand_more</i></a>
+            <ul class="submenu">
+                <li><a href="#">Một số đề thi</a></li>
+                <li><a href="#">Câu chuyện tiền thân</a></li>
+                <li><a href="#">File</a></li>
+                <li><a href="#">Trò chơi</a></li>
+            </ul>
+        </li>
         <li><a href="#">GÓC VƯỜN LAM</a></li>
         <li><a href="#">GIẢI MẬT THƯ</a></li>
     </ul>
+    <div class="menu-icon">☰</div>
     <div class="login" style="color: #337ab7">Đăng nhập</div>
 </nav>
 
